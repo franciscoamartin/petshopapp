@@ -1,3 +1,4 @@
+import { FramePageComponent } from './pages/master/frame.page';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,6 +10,10 @@ import { SignupPageComponent } from './pages/account/signup-page/signup-page.com
 import { PetsPageComponent } from './pages/account/pets-page/pets-page.component';
 import { ProductsPageComponent } from './pages/store/products-page/products-page.component';
 import { CartPageComponent } from './pages/store/cart-page/cart-page.component';
+import { AppRoutingModule } from './app-routing-module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
 	declarations: [
@@ -19,9 +24,16 @@ import { CartPageComponent } from './pages/store/cart-page/cart-page.component';
 		SignupPageComponent,
 		PetsPageComponent,
 		ProductsPageComponent,
-		CartPageComponent
+    CartPageComponent,
+    FramePageComponent
 	],
-	imports: [BrowserModule],
+	imports: [
+		BrowserModule,
+		ReactiveFormsModule,
+		HttpClientModule,
+		BrowserAnimationsModule,
+		AppRoutingModule
+	],
 	providers: [],
 	bootstrap: [AppComponent]
 })
