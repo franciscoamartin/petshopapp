@@ -6,21 +6,21 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ResetPasswordPageComponent } from './reset-password-page/reset-password-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
-import { PetsPageComponentComponent } from './pets-page-component/pets-page-component.component';
+import { PetsPageComponent } from './pets-page/pets-page.component';
+import { ProductsPageComponent } from './products-page/products-page.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    LoginPageComponent,
-    ResetPasswordPageComponent,
-    SignupPageComponent,
-    PetsPageComponentComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		NavbarComponent,
+		LoginPageComponent,
+		ResetPasswordPageComponent,
+		SignupPageComponent,
+		PetsPageComponent,
+		ProductsPageComponent
+	],
+	imports: [BrowserModule],
+	providers: [],
+	bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
